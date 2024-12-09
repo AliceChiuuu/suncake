@@ -1,6 +1,7 @@
 body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
   width: 1920px;
   height: 100vh;
   /* font-size: 14px; */
