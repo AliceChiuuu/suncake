@@ -1,0 +1,99 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.out {
+  background-color: rgb(202, 172, 53);
+  width: 1920px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 80%;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.calendar .title {
+  /* background-color: aqua; */
+  width: 90%;
+  display: flex;
+  justify-content: start;
+  padding: 50px 5%;
+}
+
+table {
+  background-color: white;
+  width: 80%;
+  height: 1200px;
+  border-collapse: collapse;
+  margin: auto;
+  table-layout: fixed;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgb(145, 145, 145);
+  padding: 20px;
+}
+
+.month-title {
+  font-size: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 60px;
+}
+
+.fa-solid {
+  color: rgb(246, 246, 246);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.color-toggle {
+  display: none;
+}
+
+label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+input:disabled+label {
+  opacity: 0.5;
+  color: gray;
+}
+
+/* 改變顏色 */
+.color-toggle:checked+label {
+  background-color: rgb(79, 58, 17);
+  color: white;
+  border-radius: 50%;
+}
+
+.calendar .bottom {
+  /* background-color: aqua; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.bottom .remark {
+  /* background-color: antiquewhite; */
+  width: 80%;
+  text-align: justify;
+  padding: 50px 10%;
+}
