@@ -88,11 +88,6 @@ body {
   height: 100%;
 }
 
-/* .swiper {
-  width: 100%;
-  height: 100%;
-} */
-
 .swiper-slide {
   background: #3f1919;
   font-size: 32px;
@@ -149,11 +144,6 @@ body {
   width: 100%;
   position: relative;
 }
-
-.swiper-button-next .top-next {}
-
-.swiper-button-prev .top-prev {}
-
 
 .shop-top-right {
   /* background-color: red; */
