@@ -2,19 +2,22 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8"
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>購買完成</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/template.css">
+
   <style>
-    .container1{
+    .container1 {
       width: 100%;
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
     }
+
     footer {
       /* font-family: Arial, sans-serif; */
       background-color: #2e2b21;
@@ -94,7 +97,8 @@
     .footer-bottom p {
       margin: 0;
     }
-    .return-button{
+
+    .return-button {
       border: 2px solid;
       ;
     }
@@ -176,22 +180,22 @@
     </div>
   </nav>
   <main class="container1 bg-[#ffcc3f] gap-y-52 p-20">
-  <div class="progress-bar flex gap-2">
-            <div class="progress-step p-5 bg-[brown] rounded-xl	text-white">訂單內容確認</div>
-            <div class="progress-arrow text-6xl text-white" >></div>
-            <div class="progress-step p-5 bg-[brown] rounded-xl	text-white">付款方式與配送地址</div>
-            <div class="progress-arrow text-6xl text-white">></div>
-            <div class="progress-step p-5 bg-[brown] rounded-xl	text-white">完成訂單</div>
-        </div>
+    <div class="progress-bar flex gap-2">
+      <div class="progress-step p-5 bg-[brown] rounded-xl	text-white">訂單內容確認</div>
+      <div class="progress-arrow text-6xl text-white">></div>
+      <div class="progress-step p-5 bg-[brown] rounded-xl	text-white">付款方式與配送地址</div>
+      <div class="progress-arrow text-6xl text-white">></div>
+      <div class="progress-step p-5 bg-[brown] rounded-xl	text-white">完成訂單</div>
+    </div>
 
-        <div class="completion-message text-9xl">
-            <h1>購買完成!</h1>
-        </div>
+    <div class="completion-message text-9xl">
+      <h1>購買完成!</h1>
+    </div>
 
-        <div class="return-button p-5 bg-[white] rounded-xl text-black px-16">
-            <button onclick="location.href='index.html'">返回首頁</button>
-        </div>
-    </div> 
+    <div class="return-button p-5 bg-[white] rounded-xl text-black px-16">
+      <button onclick="location.href='index.html'">返回首頁</button>
+    </div>
+    </div>
   </main>
 
   <footer>
@@ -234,6 +238,9 @@
       <p>&copy; 2002-2024 日出.</p>
     </div>
   </footer>
+  <!-- 載入Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
