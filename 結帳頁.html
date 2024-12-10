@@ -121,7 +121,12 @@
             padding: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        .form-section h2 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
 
+        }
 
         input[type="radio"] {
             margin-right: 10px;
@@ -130,7 +135,7 @@
         input[type="text"],
         input[type="email"],
         input[type="tel"] {
-            width: calc(100% - 20px);
+            width: 80%;
             padding: 8px 10px;
             margin-top: 5px;
             border: 1px solid #ccc;
@@ -308,20 +313,41 @@
     <div class="big-box">
         <section class="form-section">
             <h2>取貨方式</h2>
-            <input type="radio" name="pickup" value="宅配"> 宅配
-            <input type="radio" name="pickup" value="門市自取"> 門市自取
+            <input type="radio" name="pickup" value="宅配">宅配
+            <br>
+            <input type="radio" name="pickup" value="門市自取">門市自取
         </section>
         <section class="form-section">
             <h2>付款方式</h2>
-            <input type="radio" name="payment" value="ATM"> ATM帳戶轉帳
-            <input type="radio" name="payment" value="貨到付款"> 貨到付款
+            <input type="radio" name="payment" value="ATM">ATM帳戶轉帳
+            <br>
+            <input type="radio" name="payment" value="貨到付款">貨到付款
         </section>
         <section class="form-section">
             <h2>訂購人資料</h2>
-            訂購人 <input type="text" placeholder="Placeholder">
-            電子信箱 <input type="email" placeholder="Placeholder">
-            連絡電話 <input type="tel" placeholder="Placeholder">
-            地址 <input type="text" placeholder="Placeholder">
+            訂購人 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Placeholder">
+            <br><br>
+            電子信箱 &nbsp;&nbsp;<input type="email" placeholder="Placeholder">
+            <br><br>
+            連絡電話 &nbsp;&nbsp;<input type="tel" placeholder="Placeholder">
+            <br><br>
+            地址 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Placeholder">
+        </section>
+        <section class="form-section">
+            <h2>訂購人資料</h2>
+            <input type="radio" name="pickup" value="">是否同訂購人
+            <br>
+            收件人 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Placeholder">
+            <br><br>
+            電子信箱 &nbsp;&nbsp;<input type="email" placeholder="Placeholder">
+            <br><br>
+            連絡電話 &nbsp;&nbsp;<input type="tel" placeholder="Placeholder">
+            <br><br>
+            地址 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Placeholder">
+            <br><br>
+            統編 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" placeholder="Placeholder">
+            <br><br>
+            備註 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" placeholder="Placeholder">
         </section>
     </div>
     <!-- ------------------------- -->
