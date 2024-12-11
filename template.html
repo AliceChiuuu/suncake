@@ -66,14 +66,14 @@
         </ul>
       </li>
     </ul>
-  </div>
+    </div>
     <div class="left-menu">
       <div class="search">
         <i class="fa-solid fa-magnifying-glass"></i>
         <span class="hide-text">搜尋</span>
       </div>
       <div class="shopbox">
-        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-regular fa-circle-user"></i>
       </div>
       <div class="login">
         <i class="fa-regular fa-circle-user"></i>
@@ -147,6 +147,26 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    let rightMenu = document.querySelectorAll('.right-menu>li>input');
+    let menu = document.querySelectorAll('.right-menu>li>label');
+    menu.forEach((item, key) => {
+      item.addEventListener('click', function () {
+        closemenu();
+        console.log('後出現',rightMenu[key]);
+        rightMenu[key].setAttribute('checked', true);
+    });
+  });
+
+    function closemenu() {
+      rightMenu.forEach((items) => {
+        items.checked = false;
+        console.log('關閉');
+      });
+    }
+    
+  </script>
 </body>
 
 </html>
