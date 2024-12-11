@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  font-size: 28px;
+  text-decoration: none;
+  color: black;
+}
+
+.banner {
+  background-color: #ffcc3f;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.img {
+  width: 80%;
+  height: 100%;
+  background-image: url('https://via.placeholder.com/1500x500');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex;
+}
+
+.text-box {
+  background-color: #ffcc3f;
+  padding: 30px;
+  border-radius: 0px 15px 15px 0px;
+  width: 500px;
+  height: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+.text-box .text-box-s {
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  /* opacity: 50%; */
+  padding: 40px;
+}
+
+.text-box h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.text-box p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px 0 0;
+}
+
+.section {
+  background-color: #ffcc3f;
+  padding: 20px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding: 30px 0;
+}
+
+.line {
+  border-bottom: 2px solid black;
+  padding: 25px 0;
+}
+
+.nav-menu span {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: #000000;
+}
+
+.product-section {
+  background-color: #ffcc3f;
+  padding: 30px 10% 100px 10%;
+}
+
+.product-section h2 {
+  background-color: #ffcc3f;
+  font-size: 28px;
+  margin: 30px 0px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background-color: rgb(245, 174, 74);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.text {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.content {
+  height: 120px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1;
+}
+
+.mask {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-card span {
+  color: #252525;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* -------------------------------------- */
+
+/* footer */
+footer {
+  background-color: #2e2b21;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid white;
+  padding: 20px 60px;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+.footer-section ul {
+  width: auto;
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 2.5;
+  padding: 0px 10px;
+  border-left: 3px solid white;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links li {
+  margin-right: 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social-links span {
+  display: flex;
+}
+
+footer i {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.social-links a:hover {
+  color: #f1f1f1;
+}
+
+/* 底部版權區 */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 30px 0px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}

@@ -6,309 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品總覽</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-        body {
-            margin: 0;
-            width: 1920px;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        a {
-            font-size: 28px;
-            text-decoration: none;
-            color: black;
-        }
-
-        .banner {
-            background-color: #ffcc3f;
-            height: 500px;
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-
-        }
-
-        .img {
-            width: 80%;
-            height: 100%;
-            background-image: url('https://via.placeholder.com/1500x500');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: flex;
-        }
-
-        .text-box {
-            background-color: #ffcc3f;
-            padding: 30px;
-            border-radius: 0px 15px 15px 0px;
-            width: 500px;
-            height: 350px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            position: absolute;
-        }
-
-        .text-box .text-box-s {
-            width: 200px;
-            height: 200px;
-            background-color: #ffffff;
-            /* opacity: 50%; */
-            padding: 40px;
-        }
-
-        .text-box h2 {
-            font-size: 28px;
-            margin: 0;
-        }
-
-        .text-box p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 10px 0 0;
-        }
-
-        .section {
-            background-color: #ffcc3f;
-            padding: 20px 0px 0px 0px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .nav-menu {
-            width: 80%;
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 2px solid black;
-            padding: 30px 0;
-        }
-
-        .line {
-            border-bottom: 2px solid black;
-            padding: 25px 0;
-        }
-
-        .nav-menu span {
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        .nav-menu a:hover {
-            color: #000000;
-        }
-
-        .product-section {
-            background-color: #ffcc3f;
-            padding: 30px 10% 100px 10%;
-        }
-
-        .product-section h2 {
-            background-color: #ffcc3f;
-            font-size: 28px;
-            margin: 30px 0px;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .product-card {
-            background-color: rgb(245, 174, 74);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            text-align: center;
-            position: relative;
-        }
-
-        .text {
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-        }
-
-        .content {
-            height: 120px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 8px;
-            z-index: 1;
-        }
-
-        .mask {
-            position: absolute;
-            z-index: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #ffffff;
-            opacity: 0.5;
-        }
-
-        .product-card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-
-        .product-card span {
-            color: #252525;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        /* -------------------------------------- */
-
-        footer {
-            /* font-family: Arial, sans-serif; */
-            background-color: #2e2b21;
-            width: 1920px;
-            color: white;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            /* padding: 40px 60px; */
-        }
-
-        .footer-content {
-            /* background-color: rgb(72, 86, 98); */
-            width: 90%;
-            display: flex;
-            justify-content: space-around;
-            border-bottom: 2px solid white;
-            padding: 20px 60px;
-        }
-
-        .footer-section {
-            /* background-color: aqua; */
-            flex: 1;
-        }
-
-        .footer-section h3 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: #f1f1f1;
-        }
-
-        .footer-section ul {
-            /* background-color: aqua; */
-            width: auto;
-            list-style-type: none;
-            font-size: 20px;
-            line-height: 2.5;
-            padding: 0px 10px;
-            border-left: 3px solid white;
-        }
-
-        .social-links {
-            display: flex;
-        }
-
-        .social-links li {
-            margin-right: 10px;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-        }
-
-        .social-links span {
-            display: flex;
-        }
-
-        footer i {
-            font-size: 28px;
-            margin-right: 10px;
-        }
-
-        .social-links a:hover {
-            color: #f1f1f1;
-        }
-
-        /* 底部版權區 */
-        .footer-bottom {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 20px;
-            padding: 30px 0px;
-        }
-
-        .footer-bottom p {
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/Total-products.css">
 </head>
 
 <body>
     <nav class="bg-decoration-transparent-800">
         <div class="mx-auto max-w-[1920px] px-2 ml:px-6 lg:px-8">
-          <div class="relative flex h-16 items-center justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <!-- Mobile menu button-->
-              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                <span class="absolute -inset-0.5"></span>
-              </button> 
-            </div>
-            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div class="flex shrink-0 items-center">
-                <img class="h-8 w-auto" src="https://www.dawncake.com.tw/images/logos/1/%E6%97%A5%E6%97%A5%E5%87%BA%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-01-01-02.png" alt="Your Company">
-              </div>
-              <div class="hidden sm:ml-6 sm:block">
-                <div class="flex space-x-4">
-                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-lg">關於日出</a>
-                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-lg">最新消息</a>
-                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-lg">主打商品</a>
-                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-lg">商品總覽</a>
-                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-lg">常見問題</a>
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                        <span class="absolute -inset-0.5"></span>
+                    </button>
                 </div>
-              </div>
-            </div>
-
-            <!-- 搜尋框，將圖示放在前面 -->
-            <div class="relative mr-4 flex items-center">
-              <span class="absolute left-2 text-gray-400">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </span>
-              <input type="text" placeholder="搜尋" class="pl-8 w-36 sm:w-20 p-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500">
-            </div>
-
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <!-- 購物車圖示 -->
-              <button type="button" class="relative rounded-full p-1 text-gray-400 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                <span class="absolute -inset-1.5"></span>
-                <span class="sr-only">View cart</span>
-                <i class="fa-solid fa-cart-shopping text-xl"></i> <!-- 替換成購物車圖示 -->
-              </button>
-
-              <!-- Profile dropdown -->
-              <div class="relative ml-3">
-                <div>
-                  <button type="button" class="relative flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                    <span class="absolute -inset-1.5"></span>
-                    <span class="sr-only">Open user menu</span>
-                    <i class="fa-regular fa-user text-xl">登入</i>
-                  </button>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex shrink-0 items-center">
+                        <img class="h-8 w-auto"
+                            src="https://www.dawncake.com.tw/images/logos/1/%E6%97%A5%E6%97%A5%E5%87%BA%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-01-01-02.png"
+                            alt="Your Company">
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-lg">關於日出</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-lg">最新消息</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-lg">主打商品</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-lg">商品總覽</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-lg">常見問題</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
+                <!-- 搜尋框，將圖示放在前面 -->
+                <div class="relative mr-4 flex items-center">
+                    <span class="absolute left-2 text-gray-400">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="text" placeholder="搜尋"
+                        class="pl-8 w-36 sm:w-20 p-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500">
+                </div>
+
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <!-- 購物車圖示 -->
+                    <button type="button"
+                        class="relative rounded-full p-1 text-gray-400 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                        <span class="absolute -inset-1.5"></span>
+                        <span class="sr-only">View cart</span>
+                        <i class="fa-solid fa-cart-shopping text-xl"></i> <!-- 替換成購物車圖示 -->
+                    </button>
+
+                    <!-- Profile dropdown -->
+                    <div class="relative ml-3">
+                        <div>
+                            <button type="button"
+                                class="relative flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                <span class="absolute -inset-1.5"></span>
+                                <span class="sr-only">Open user menu</span>
+                                <i class="fa-regular fa-user text-xl">登入</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
         <div class="sm:hidden" id="mobile-menu">
-          <div class="space-y-1 px-2 pb-3 pt-2">
-            <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
-          </div>
+            <div class="space-y-1 px-2 pb-3 pt-2">
+                <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                    aria-current="page">Dashboard</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+            </div>
         </div>
     </nav>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -340,7 +119,7 @@
         <h2>XX系列</h2>
         <div class="product-grid">
             <div class="product-card">
-                <a href="./merchandise/merchandise.html"><img src="" alt=""></a>
+                <a href="./product.html"><img src="" alt=""></a>
                 <div class="text">
                     <div class="content">
                         <span>商品名稱</span>
@@ -350,7 +129,7 @@
                 </div>
             </div>
             <div class="product-card">
-                <a href="./merchandise/merchandise.html"><img src="" alt=""></a>
+                <a href="./product.html"><img src="" alt=""></a>
                 <div class="text">
                     <div class="content">
                         <span>商品名稱</span>
@@ -360,7 +139,7 @@
                 </div>
             </div>
             <div class="product-card">
-                <a href="./merchandise/merchandise.html"><img src="" alt=""></a>
+                <a href="./product.html"><img src="" alt=""></a>
                 <div class="text">
                     <div class="content">
                         <span>商品名稱</span>
@@ -370,7 +149,7 @@
                 </div>
             </div>
             <div class="product-card">
-                <a href="./merchandise/merchandise.html"><img src="" alt=""></a>
+                <a href="./product.html"><img src="" alt=""></a>
                 <div class="text">
                     <div class="content">
                         <span>商品名稱</span>
@@ -380,7 +159,7 @@
                 </div>
             </div>
             <div class="product-card">
-                <a href="./merchandise/merchandise.html"><img src="" alt=""></a>
+                <a href="./product.html"><img src="" alt=""></a>
                 <div class="text">
                     <div class="content">
                         <span>商品名稱</span>
@@ -390,7 +169,7 @@
                 </div>
             </div>
             <div class="product-card">
-                <a href="./merchandise/merchandise.html"><img src="" alt=""></a>
+                <a href="./product.html"><img src="" alt=""></a>
                 <div class="text">
                     <div class="content">
                         <span>商品名稱</span>
@@ -404,7 +183,7 @@
         <h2>XX系列</h2>
         <div class="product-grid">
             <div class="product-card">
-                <a href="./merchandise/merchandise.html"><img src="" alt=""></a>
+                <a href="./product.html"><img src="" alt=""></a>
                 <div class="text">
                     <div class="content">
                         <span>商品名稱</span>
@@ -414,7 +193,7 @@
                 </div>
             </div>
             <div class="product-card">
-                <a href="./merchandise/merchandise.html"><img src="" alt=""></a>
+                <a href="./product.html"><img src="" alt=""></a>
                 <div class="text">
                     <div class="content">
                         <span>商品名稱</span>
@@ -424,7 +203,7 @@
                 </div>
             </div>
             <div class="product-card">
-                <a href="./merchandise/merchandise.html"><img src="" alt=""></a>
+                <a href="./product.html"><img src="" alt=""></a>
                 <div class="text">
                     <div class="content">
                         <span>商品名稱</span>
@@ -434,7 +213,7 @@
                 </div>
             </div>
             <div class="product-card">
-                <a href="./merchandise/merchandise.html"><img src="" alt=""></a>
+                <a href="./product.html"><img src="" alt=""></a>
                 <div class="text">
                     <div class="content">
                         <span>商品名稱</span>
@@ -444,7 +223,7 @@
                 </div>
             </div>
             <div class="product-card">
-                <a href="./merchandise/merchandise.html"><img src="" alt=""></a>
+                <a href="./product.html"><img src="" alt=""></a>
                 <div class="text">
                     <div class="content">
                         <span>商品名稱</span>
@@ -454,7 +233,7 @@
                 </div>
             </div>
             <div class="product-card">
-                <a href="./merchandise/merchandise.html"><img src="" alt=""></a>
+                <a href="./product.html"><img src="" alt=""></a>
                 <div class="text">
                     <div class="content">
                         <span>商品名稱</span>
@@ -467,47 +246,62 @@
     </div>
     <footer>
         <div class="footer-content">
-            <div class="footer-section">
-                <h3>日出徵才</h3>
-                <ul>
-                    <li><a href="https://www.104.com.tw/" target="_blank">104人力銀行</a></li>
-                    <li><a href="https://www.1111.com.tw/" target="_blank">111人力銀行</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>聯絡資訊</h3>
-                <ul>
-                    <li>服務信箱：service1@dawncake.com.tw</li>
-                    <li>宅配服務專線：+886-4-2359-7477</li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>社交媒體</h3>
-                <ul class="social-links">
-                    <li><a href="https://facebook.com" target="_blank"><span><i
-                                    class="fa-brands fa-facebook"></i></span></a></li>
-                    <li><a href="https://instagram.com" target="_blank"><span><i
-                                    class="fa-brands fa-instagram"></i></span></a>
-                    </li>
-                    <li><a href="https://www.line.me/tw/" target="_blank"><span><i
-                                    class="fa-brands fa-line"></i></span></a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3><i class="fa-solid fa-location-dot"></i>門市資訊</h3>
-            </div>
+          <div class="footer-section">
+            <h3>日出徵才</h3>
+            <ul>
+              <li>
+                <a href="https://www.104.com.tw/" target="_blank">104人力銀行</a>
+              </li>
+              <li>
+                <a href="https://www.1111.com.tw/" target="_blank">111人力銀行</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>聯絡資訊</h3>
+            <ul>
+              <li>服務信箱：service1@dawncake.com.tw</li>
+              <li>宅配服務專線：+886-4-2359-7477</li>
+            </ul>
+          </div>
+    
+          <div class="footer-section">
+            <h3>社交媒體</h3>
+            <ul class="social-links">
+              <li>
+                <a href="https://facebook.com" target="_blank">
+                  <span><i class="fa-brands fa-facebook"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com" target="_blank">
+                  <span><i class="fa-brands fa-instagram"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.line.me/tw/" target="_blank">
+                  <span><i class="fa-brands fa-line"></i></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="footer-section">
+            <h3>
+              <i class="fa-solid fa-location-dot"></i>
+              門市資訊
+            </h3>
+          </div>
         </div>
-
+    
         <div class="footer-bottom">
-            <p>
-                廠登：9970239000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;產品責任險：1403&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第082050102號&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;食品業者登錄字號：B-128389018-00000-8
-            </p>
-            <br>
-            <p>&copy; 2002-2024 日出.</p>
+          <p>
+            廠登：9970239000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;產品責任險：1403&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第082050102號&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;食品業者登錄字號：B-128389018-00000-8
+          </p>
+          <br>
+          <p>&copy; 2002-2024 日出.</p>
         </div>
-    </footer>
+      </footer>
 </body>
 
 </html>

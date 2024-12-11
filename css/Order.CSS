@@ -169,6 +169,7 @@ input[type="number"] {
   color: #333;
   /* width: 300px; */
   /* height: 70px; */
+  text-align: center;
 }
 
 .next-btn {

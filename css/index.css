@@ -3,7 +3,6 @@
 }
 
 body {
-    width: 1920px;
     background-color: #F4C85B;
     margin: 0;
 }
@@ -323,3 +322,79 @@ main span {
 .history-btn:hover {
     font-size: 18px;
 }
+
+
+/* footer */
+footer {
+    background-color: #2e2b21;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-content {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid white;
+    padding: 20px 60px;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  .footer-section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+  }
+  
+  .footer-section ul {
+    width: auto;
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 2.5;
+    padding: 0px 10px;
+    border-left: 3px solid white;
+  }
+  
+  .social-links {
+    display: flex;
+  }
+  
+  .social-links li {
+    margin-right: 10px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .social-links span {
+    display: flex;
+  }
+  
+  footer i {
+    font-size: 28px;
+    margin-right: 10px;
+  }
+  
+  .social-links a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* 底部版權區 */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 30px 0px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
