@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:  #FFCC3F;
+  width: 1920px;
+  margin: 0;     
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-bar {
+  display: flex;                        
+  justify-content: space-between;
+  width: 800px;
+  margin-bottom: 25px;
+}
+
+.progress-bar button {
+  width: 500px;
+  font-size: 18px;
+  height: 75px;
+  /* margin: 0 40px; */
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.active,.progressbtn {
+    background-color: rgb(88, 62, 62);
+    color: white;
+    border: none;
+}
+
+.submitbtn {
+    border: 3px solid #333;
+}
+
+.remove-btn {
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.back-btn, .next-btn {
+  font-size: 20px;
+  width: 300px;
+  padding: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-btn {
+  background-color: #eee;
+  color: #333;
+  border-radius: 20px;
+  border: 3px solid #333;
+}
+
+.next-btn {
+  background-color: white;
+  color:#333;
+  border: 3px solid #333;
+  border-radius: 20px;
+}
+
+.next-btn:hover,.back-btn:hover {
+    background-color: rgb(88, 62, 62);
+    color: white;
+    border: none;
+}
+
+.fa-solid {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+</style>
+<body>
+    <div class="main">
+        <div class="progress-bar">
+            <button class="active">訂單內容確認</button>
+            <i class="fa-solid fa-chevron-right"></i>
+            <button class="progressbtn">付款方式及資料填寫</button>
+            <i class="fa-solid fa-chevron-right"></i>
+            <button class="submitbtn">完成購買</button>
+        </div>
+        <div class="container"></div>
+        <div class="actions">
+            <button class="back-btn">回到上一步</button>
+            <button class="next-btn">確認送出</button>
+        </div>
+    </div>
+</body>
+</html>
