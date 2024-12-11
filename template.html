@@ -73,7 +73,7 @@
         <span class="hide-text">搜尋</span>
       </div>
       <div class="shopbox">
-        <i class="fa-regular fa-circle-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
       </div>
       <div class="login">
         <i class="fa-regular fa-circle-user"></i>
@@ -154,10 +154,10 @@
     menu.forEach((item, key) => {
       item.addEventListener('click', function () {
         closemenu();
-        console.log('後出現',rightMenu[key]);
+        console.log('後出現', rightMenu[key]);
         rightMenu[key].setAttribute('checked', true);
+      });
     });
-  });
 
     function closemenu() {
       rightMenu.forEach((items) => {
@@ -165,7 +165,7 @@
         console.log('關閉');
       });
     }
-    
+
   </script>
 </body>
 
