@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 body {
   font-family: Arial, sans-serif;
   width: 1920px;
@@ -171,6 +175,7 @@ input[type="number"] {
   background-color: #b46e04;
   color: white;
   /* height: 70px; */
+  text-align: center;
 }
 
 .name-group {
