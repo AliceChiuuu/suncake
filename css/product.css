@@ -5,17 +5,36 @@ body{
 }
 
 /* nav */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navleft {
+  width: 15%;
+}
+
+.navmiddle {
+  width: 60%;
+  display: flex;
+}
+
+.navright {
+  width: 25%;
+  display: flex;
+}
+
 .contanior-all {
   width: 100%;
   margin: auto;
-  background-color: #FFEFBB;
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   flex: 1;
   z-index: 4;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 
 .logo img {
@@ -23,31 +42,31 @@ body{
 }
 
 .logo {
-  padding:  20px 100px 20px 50px;
+  padding: 20px 100px 20px 50px;
 }
 
-.contanior-all ul {
-  width: 100%;
+.contanior-all>ul {
+  /* width: 100%; */
   color: rgb(88, 62, 62);
   display: flex;
   justify-content: start;
   align-items: center;
   list-style: none;
-  margin: 0;
   padding: 0;
-  gap: 50px;
+  gap: 70px;
   font-size: 20px;
   cursor: pointer;
 }
 
-.right-menu li:hover {
-  font-size: 22px;
+.right-menu {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  margin-right: 150px;
 }
 
-.contanior-all .left-menu {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 50px;
+.right-menu li:hover {
+  font-size: 20px;
 }
 
 .search {
@@ -56,6 +75,52 @@ body{
   opacity: 0.8;
   padding: 10px 20px;
   border-radius: 20px;
+}
+
+input:checked+.openb {
+  display: flex;
+}
+
+.test {
+  position: relative;
+}
+
+.openb {
+  display: none;
+  hover: none;
+}
+
+.openb>li:hover {
+  background-color: black;
+  color: white;
+
+}
+
+.right-menu>li {
+  position: relative;
+}
+
+.right-menu>li>ul {
+  transform: translate(-50%, 38px);
+  position: absolute;
+  left: 50%;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.right-menu>li>ul>li {
+  text-align: center;
+  min-width: 100px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.left-menu {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 /* 內容 */
