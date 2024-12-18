@@ -81,7 +81,6 @@ input:checked+.openb {
 
 .openb {
   display: none;
-  hover: none;
 }
 
 .openb>li:hover {
