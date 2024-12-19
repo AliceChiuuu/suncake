@@ -1,10 +1,4 @@
-
-
 <template>
-
-    <link rel="stylesheet" href="Delivery.css">
-
-<body>
     <main class="order-summary">
         <h1>訂單明細</h1>
         <table class="order-table">
@@ -72,8 +66,6 @@
             </div>
         </div>
     </main>
-</body>
-
 </template>
 
 <style scoped>

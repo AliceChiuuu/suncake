@@ -1,5 +1,4 @@
 <template>
-    <body>
         <div class="big-box">
             <div class="main">
                 <div class="progress-bar">
@@ -230,14 +229,13 @@
                 </section>
                 <div class="container"></div>
                 <div class="actions">
-                    <button class="back-btn">回到上一步</button>
-                    <button class="next-btn">確認送出</button>
+                    <a href="./OrderView.vue"><button class="back-btn">回到上一步</button></a>
+                    <a href="./LastpageNew.vue"><button class="next-btn">確認送出</button></a>
                     <!-- <a href="./Order.html" class="back-btn">回到上一步</button></a>
                     <a href="./lastpage-new.html" class="next-btn">確認送出</button></a> -->
                 </div>
             </div>
         </div>
-    </body>
 </template>
 
 <style scoped>

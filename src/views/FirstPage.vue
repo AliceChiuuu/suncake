@@ -1,5 +1,4 @@
 <template>
-  <body>
     <!-- 頁首 -->
     <div class="container">
       <!-- 輪播Banner容器 -->
@@ -105,7 +104,6 @@
         <button class="history-btn">瞭 解 更 多</button>
       </section>
     </main>
-  </body>
 </template>
 <style scoped>
 @import'../assets/index.css';

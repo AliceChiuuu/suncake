@@ -1,5 +1,4 @@
 <template>
-<body>
     <div class="main">
         <div class="progress-bar">
             <button class="active">訂單內容確認</button>
@@ -71,15 +70,14 @@
             </div>
         </div>
         <div class="actions">
-            <button class="back-btn">繼續選購</button>
-            <button class="next-btn">下一步</button>
+            <a href="./ProductView.vue"><button class="back-btn">繼續選購</button></a>
+            <a href="./PayView.vue"><button class="next-btn">下一步</button></a>
             <!-- <a href="./product.html" class="back-btn">繼續選購</button></a>
             <a href="./pay.html" button class="next-btn">下一步</button></a> -->
         </div>
     </div>
-</body>
 </template>
 
 <style scoped>
-@import'../assets/Order.CSS';
+@import'../assets/Order.css';
 </style>

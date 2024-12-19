@@ -1,6 +1,4 @@
 <template>
-
-  <body>
     <main>
       <div class="shop-top">
         <div class="shop-top-left">
@@ -98,9 +96,11 @@
                 <span class="quantity" id="quantity">1</span>&nbsp;&nbsp;&nbsp;
                 <button class="quantity-button" id="increase">+</button>
               </div>
-              <a><button type="button" class="buy">
-                <span>加入購物車</span>
-              </button></a>
+              <a href="./OrderView.vue">
+                <button type="button" class="buy">
+                  <span>加入購物車</span>
+                </button>
+              </a>
               <!-- <a href="./Order.html" button type="button" class="buy">
               <span>加入購物車</span>
               </button> -->
@@ -223,7 +223,6 @@
         </div>
       </div>
     </main>
-  </body>
 </template>
 
 <style scoped>
@@ -231,7 +230,10 @@
 </style>
 
 
-<!-- nav -->
+
+
+
+
 <script>
 // 這裡用querySelectorAll找出所有的點擊鈕的label =>就是所有的點擊鈕
 let menu = document.querySelectorAll('.right-menu>li>label');
@@ -330,5 +332,4 @@ menu.forEach((item, key) => {
         prevEl: ".bot-prev",
       },
     });
-  </script>
-
+</script>
