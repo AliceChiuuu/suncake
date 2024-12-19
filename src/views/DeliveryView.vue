@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>訂單明細</title>
+
+
+<template>
+
     <link rel="stylesheet" href="Delivery.css">
-</head>
+
 <body>
     <main class="order-summary">
         <h1>訂單明細</h1>
@@ -75,4 +73,9 @@
         </div>
     </main>
 </body>
-</html>
+
+</template>
+
+<style scoped>
+@import ''
+</style>

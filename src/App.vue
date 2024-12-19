@@ -1,85 +1,143 @@
-<script setup>
+<!-- <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-</script>
+</script> -->
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <nav class="contanior-all">
+      <div class="logo">
+        <img src="./img/日日出股份有限公司-01-01-02.png" alt="">
+      </div>
+      <ul class="right-menu">
+        <li class="test">
+          <label for="sun">關於日出</label>
+          <input type="checkbox" id="sun" hidden>
+          <ul class="openb">
+            <li>品牌故事</li>
+            <li>門市資訊</li>
+          </ul>
+        </li>
+        <li class="test">
+          <label for="new">最新消息</label>
+          <input type="checkbox" id="new" hidden>
+          <ul class="openb">
+            <li>活動資訊</li>
+            <li>新品上市</li>
+            <li>媒體報導</li>
+          </ul>
+        </li>
+        <li class="test">
+          <label for="hot">主打商品</label>
+          <input type="checkbox" id="hot" hidden>
+          <ul class="openb">
+            <li>土鳳梨酥</li>
+            <li>乳酪蛋糕</li>
+            <li>快速出貨</li>
+          </ul>
+        </li>
+        <li class="test">
+          <label for="shop">商品總覽</label>
+          <input type="checkbox" id="shop" hidden>
+          <ul class="openb">
+            <li>糕點/茶食</li>
+            <li>宮原巧克力</li>
+            <li>宮原冰淇淋</li>
+            <li>綜合禮盒</li>
+            <li>彌月禮盒</li>
+            <li>選茶</li>
+            <li>訂製專區</li>
+          </ul>
+        </li>
+        <li class="test">
+          <label for="question">常見問題</label>
+          <input type="checkbox" id="question" hidden>
+          <ul class="openb">
+            <li>關於會員</li>
+            <li>購買須知</li>
+            <li>保存方法</li>
+          </ul>
+        </li>
+      </ul>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
+      <div class="left-menu">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="hide-text">搜尋</span>
+        </div>
+        <div class="shopbox">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="login">
+          <i class="fa-regular fa-circle-user"></i>
+          <span class="hide-text">登入</span>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <RouterView />
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>日出徵才</h3>
+        <ul>
+          <li>
+            <a href="https://www.104.com.tw/" target="_blank">104人力銀行</a>
+          </li>
+          <li>
+            <a href="https://www.1111.com.tw/" target="_blank">111人力銀行</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>聯絡資訊</h3>
+        <ul>
+          <li>服務信箱：service1@dawncake.com.tw</li>
+          <li>宅配服務專線：+886-4-2359-7477</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>社交媒體</h3>
+        <ul class="social-links">
+          <li>
+            <a href="https://facebook.com" target="_blank">
+              <span><i class="fa-brands fa-facebook"></i></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank">
+              <span><i class="fa-brands fa-instagram"></i></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.line.me/tw/" target="_blank">
+              <span><i class="fa-brands fa-line"></i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>
+          <i class="fa-solid fa-location-dot"></i>
+          門市資訊
+        </h3>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        廠登：9970239000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;產品責任險：1403&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第082050102號&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;食品業者登錄字號：B-128389018-00000-8
+      </p>
+      <br>
+      <p>&copy; 2002-2024 日出.</p>
+    </div>
+  </footer>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
+@import'./assets/template.css';
 </style>
