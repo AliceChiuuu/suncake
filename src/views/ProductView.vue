@@ -98,9 +98,9 @@
                 <span class="quantity" id="quantity">1</span>&nbsp;&nbsp;&nbsp;
                 <button class="quantity-button" id="increase">+</button>
               </div>
-              <button type="button" class="buy">
+              <a><button type="button" class="buy">
                 <span>加入購物車</span>
-              </button>
+              </button></a>
               <!-- <a href="./Order.html" button type="button" class="buy">
               <span>加入購物車</span>
               </button> -->
