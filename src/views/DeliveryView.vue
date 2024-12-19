@@ -77,5 +77,5 @@
 </template>
 
 <style scoped>
-@import ''
+@import '../assets/Delivery.css';
 </style>
