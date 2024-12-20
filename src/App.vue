@@ -139,7 +139,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style scoped>
-@import'./assets/template.css';
+@import'./assets/css/template.css';
 </style>
 
 <!-- <script>
