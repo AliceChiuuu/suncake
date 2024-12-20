@@ -153,5 +153,5 @@
 </template>
 
 <style scoped>
-@import '../assets/Total-products.css';
+@import '../assets/css/Total-products.css';
 </style>

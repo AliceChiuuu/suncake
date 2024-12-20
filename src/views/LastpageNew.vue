@@ -19,5 +19,5 @@
 </template>
 
 <style scoped>
-@import'../assets/lastpage-new.css';
+@import'../assets/css/lastpage-new.css';
 </style>

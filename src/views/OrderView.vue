@@ -79,5 +79,5 @@
 </template>
 
 <style scoped>
-@import'../assets/Order.css';
+@import'../assets/css/Order.css';
 </style>

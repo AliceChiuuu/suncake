@@ -239,5 +239,5 @@
 </template>
 
 <style scoped>
-@import'../assets/pay.css';
+@import'../assets/css/pay.css';
 </style>

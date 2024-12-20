@@ -119,5 +119,5 @@ import TheWelcome from '../components/TheWelcome.vue'
 </template>
 
 <style scoped>
-@import'../assets/index.css';
+@import'../assets/css/index.css';
 </style>

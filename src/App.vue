@@ -141,3 +141,21 @@ import HelloWorld from './components/HelloWorld.vue'
 <style scoped>
 @import'./assets/template.css';
 </style>
+
+<!-- <script>
+// 這裡用querySelectorAll找出所有的點擊鈕的label =>就是所有的點擊鈕
+let menu = document.querySelectorAll('.right-menu>li>label');
+// 這裡用querySelectorAll選取所有的right-menu>li底下的input =>也是所有的點擊鈕
+let rightMenu = document.querySelectorAll('.right-menu>li>input');
+// 這裡用forEach找出所有的點擊鈕的 item => 就是每一個點擊鈕 ,key => 就是每一個點擊鈕的索引, 這樣就可以知道是哪一個點擊鈕被點擊 ex:關於日出的key是0,最新消息的key是1
+menu.forEach((item, key) => {
+  // 這裡用addEventListener監聽每一個點擊鈕的點擊事件,當我點擊時就觸發下面的forEach
+  item.addEventListener('click', function () {
+    rightMenu.forEach((items, itemkey) => {/
+      // 這裡判斷如果點擊的點擊鈕的索引等於點擊的點擊鈕的索引就不做事,如果不等於就把所有的點擊鈕都關掉
+      if (key == itemkey) return;
+      items.checked = false
+    });
+  })
+});
+</script> -->

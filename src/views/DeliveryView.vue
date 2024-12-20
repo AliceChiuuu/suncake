@@ -69,5 +69,5 @@
 </template>
 
 <style scoped>
-@import '../assets/Delivery.css';
+@import '../assets/css/Delivery.css';
 </style>

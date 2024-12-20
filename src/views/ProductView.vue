@@ -226,7 +226,7 @@
 </template>
 
 <style scoped>
-@import'../assets/product.css';
+@import'../assets/css/product.css';
 </style>
 
 
