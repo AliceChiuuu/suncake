@@ -1,0 +1,740 @@
+@keyframes bottom-green {
+    20% {
+        margin-right: 10%;
+    }
+
+    40% {
+        margin-right: 20%;
+    }
+
+    60% {
+        margin-right: 30%;
+    }
+
+    80% {
+        margin-right: 40%;
+    }
+
+    100% {
+        margin-right: 50%;
+    }
+}
+
+@keyframes top-stars {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+@keyframes bubbles-float {
+    20% {
+        top: 5px;
+    }
+
+    40% {
+        top: 10px;
+    }
+
+    60% {
+        top: 15px;
+    }
+
+    80% {
+        top: 20px;
+    }
+
+    100% {
+        top: 25px;
+    }
+}
+
+@keyframes cloud-move {
+    0% {
+        margin-right: 40px;
+    }
+
+    25% {
+        margin-right: 80px;
+    }
+
+    50% {
+        margin-right: 120px;
+    }
+
+    75% {
+        margin-right: 160px;
+    }
+
+    100% {
+        margin-right: 200px;
+    }
+}
+
+@keyframes move-fish-2 {
+    20% {
+        right: 80%;
+        top: 40%;
+    }
+
+    40% {
+        right: 60%;
+        top: 20%;
+    }
+
+    60% {
+        right: 15%;
+        top: 10%;
+
+        transform: scaleX(-1);
+    }
+
+    80% {
+        right: 10%;
+        top: 50%;
+    }
+
+    100% {
+        right: 20%;
+        top: 60%;
+    }
+}
+
+@keyframes words1 {
+    50% {
+        color: rgb(245, 50, 50);
+    }
+
+    100% {
+        color: rgb(229, 140, 140);
+    }
+}
+
+@keyframes words2 {
+    50% {
+        color: rgb(245, 50, 50);
+    }
+
+    100% {
+        color: rgb(229, 140, 140);
+    }
+}
+
+@keyframes words3 {
+    50% {
+        color: rgb(245, 50, 50);
+    }
+
+    100% {
+        color: rgb(229, 140, 140);
+    }
+}
+
+@keyframes words4 {
+    50% {
+        color: rgb(245, 50, 50);
+    }
+
+    100% {
+        color: rgb(229, 140, 140);
+    }
+}
+
+@keyframes words5 {
+    50% {
+        color: rgb(245, 50, 50);
+    }
+
+    100% {
+        color: rgb(229, 140, 140);
+    }
+}
+
+@keyframes words6 {
+    50% {
+        color: rgb(245, 50, 50);
+    }
+
+    100% {
+        color: rgb(229, 140, 140);
+    }
+}
+
+@keyframes words7 {
+    50% {
+        color: rgb(245, 50, 50);
+    }
+
+    100% {
+        color: rgb(229, 140, 140);
+    }
+}
+
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.loading {
+    z-index: 1;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    display: flex;
+}
+
+.letter {
+    animation-duration: 7s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+
+.l1 {
+    color: rgb(48, 48, 113);
+    animation-name: words1;
+    animation-delay: 1s;
+}
+
+.l2 {
+    color: red;
+    animation-name: words2;
+    animation-delay: 1.5s;
+}
+
+.l3 {
+    color: gold;
+    animation-name: words3;
+    animation-delay: 2s;
+}
+
+.l4 {
+    color: rgb(48, 48, 113);
+    animation-name: words4;
+    animation-delay: 2.5s;
+}
+
+.l5 {
+    color: green;
+    animation-name: words5;
+    animation-delay: 3s;
+}
+
+.l6 {
+    color: red;
+    animation-name: words6;
+    animation-delay: 3.5s;
+}
+
+.l7 {
+    color: gold;
+    animation-name: words7;
+    animation-delay: 4s;
+}
+
+.container {
+    background-color: rgb(37, 100, 112);
+    /* background-color: white; */
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.moon {
+    background-color: bisque;
+    width: 200px;
+    height: 200px;
+
+    position: absolute;
+    top: 10%;
+    right: 10%;
+
+    border-radius: 50%;
+}
+
+.sun {
+    background-color: gold;
+    width: 200px;
+    height: 200px;
+
+    position: absolute;
+    top: 10%;
+    right: 10%;
+
+    border-radius: 50%;
+    display: none;
+}
+
+.moon::before {
+    content: "";
+    background-color: rgb(37, 100, 112);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    position: absolute;
+    right: 70px;
+
+}
+
+.stars {
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+
+
+    animation-name: top-stars;
+    animation-duration: 5s;
+    /* 速度不變 */
+    animation-timing-function: linear;
+    /* 無限重複 */
+    animation-iteration-count: infinite;
+}
+
+.stars-1 {
+    top: 15%;
+    animation-delay: 1s;
+}
+
+.stars-2 {
+    top: 10%;
+    right: 30%;
+    animation-delay: 3s;
+}
+
+.stars-3 {
+    top: 20%;
+    right: 40%;
+}
+
+.stars-4 {
+    top: 35%;
+    right: 35%;
+    animation-delay: 2s;
+}
+
+.stars-5 {
+    top: 25%;
+    right: 25%;
+    animation-delay: 0.5s;
+}
+
+.stars-6 {
+    top: 10%;
+    left: 30%;
+}
+
+.stars-7 {
+    top: 25%;
+    left: 25%;
+    animation-delay: 3s;
+}
+
+.stars-8 {
+    top: 25%;
+    left: 35%;
+    animation-delay: 5s;
+}
+
+.stars-9 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 4s;
+}
+
+.stars-10 {
+    top: 35%;
+    left: 15%;
+}
+
+
+
+.box {
+    background: linear-gradient(to bottom, #36518b 50%, #293d69 80%);
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    /* border-radius: 50%; */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top: 10px solid rgb(95, 11, 11);
+    border-left: 10px solid rgb(16, 16, 106);
+    border-right: 10px solid rgb(122, 106, 17);
+    border-bottom: 10px solid rgb(10, 81, 10);
+
+    position: relative;
+}
+
+.box:hover~.moon {
+    display: none;
+}
+
+.box:hover~.stars {
+    display: none;
+}
+
+.box:hover~.sun {
+    display: block;
+}
+
+.box:hover~.cloud {
+    display: block;
+}
+
+.box:hover {
+    background: linear-gradient(to bottom, #527ad1 50%, #334d85 90%);
+    border-top: 10px solid rgb(158, 27, 27);
+    border-left: 10px solid rgb(30, 30, 193);
+    border-right: 10px solid rgb(202, 176, 29);
+    border-bottom: 10px solid rgb(19, 136, 19);
+}
+
+.box:hover .fish-1 {
+    display: none;
+}
+
+.box:hover .fish-2 {
+    display: block;
+}
+
+.box:hover .green {
+    background-color: rgb(19, 136, 19);
+}
+
+.container:has(.box:hover) {
+    background-color: rgba(233, 222, 130, 0.738);
+    /* 更改背景色 */
+}
+
+
+.cloud {
+    background-color: #fff;
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 60%;
+    right: 50%;
+
+    box-shadow:
+        40px 20px 0 0 #fff,
+        90px 10px 0 0 #fff,
+        140px 30px 0 0 #fff,
+        180px 10px 0 0 #fff,
+        210px 40px 0 0 #fff;
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+    /* 用陰影來做多個圓形效果 */
+
+    animation-name: cloud-move;
+    animation-duration: 15s;
+    animation-timing-function: steps(5);
+    animation-iteration-count: infinite;
+}
+
+.cloud-1 {
+    position: absolute;
+    top: 5%;
+    right: 55%;
+    display: none;
+}
+
+.cloud-2 {
+    position: absolute;
+    top: 15%;
+    right: 90%;
+    display: none;
+}
+
+/* 添加更真實的陰影 */
+.cloud:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    /* 淡淡的陰影 */
+    border-radius: 50%;
+    z-index: -1;
+    /* 將陰影放到雲朵後面 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.bubbles {
+    background-color: rgb(119, 119, 249);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* border: 1px solid rgb(119, 119, 249); */
+
+    position: absolute;
+
+    animation-name: bubbles-float;
+    animation-duration: 10s;
+    /* 速度不變 */
+    animation-timing-function: linear;
+    /* 無限重複 */
+    animation-iteration-count: infinite;
+}
+
+
+.bubbles::before {
+    content: "";
+    border: 1.5px solid white;
+    position: absolute;
+    right: 25%;
+    top: 25%;
+}
+
+.bubbles-1 {
+    width: 10px;
+    height: 20px;
+    right: 90%;
+    top: 50%;
+}
+
+.bubbles-2 {
+    width: 10px;
+    height: 15px;
+    right: 85%;
+    top: 63%;
+}
+
+.bubbles-3 {
+    right: 5%;
+    top: 68%;
+}
+
+.fish {
+    /* background: linear-gradient(to right, #FF4500 30%, #000000 40%, white 45%, #000000 60%, #FF4500 65%); */
+    background: linear-gradient(to bottom, gray 55%, white 85%);
+    width: 60px;
+    height: 30px;
+    border-radius: 50%;
+
+    position: absolute;
+    right: 20%;
+    top: 60%;
+}
+
+.fish::before {
+    /* background-color: aqua; */
+    /* width: 30px;
+    height: 30px; */
+    content: "";
+
+    border-top: 17px solid transparent;
+    border-right: 17px solid gray;
+    border-bottom: 17px solid transparent;
+    border-left: 17px solid transparent;
+    border-radius: 10px;
+
+    position: absolute;
+    right: -15%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.fish::after {
+    content: "";
+    background-color: black;
+    width: 5px;
+    height: 3px;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+
+.fish-2 {
+    display: none;
+    animation-name: move-fish-2;
+    animation-duration: 15s;
+    animation-timing-function: steps();
+    animation-iteration-count: infinite;
+}
+
+.fish-2::after {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.bottom {
+    /* background-color: #2a3f6d; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.green {
+    background-color: rgb(10, 81, 10);
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    position: absolute;
+
+    animation-name: bottom-green;
+    animation-duration: 25s;
+    /* 速度不變 */
+    animation-timing-function: steps(5);
+    /* 無限重複 */
+    animation-iteration-count: infinite;
+}
+
+.green-1 {
+    height: 60px;
+    width: 10px;
+    bottom: 0;
+    right: 10%;
+}
+
+.green-2 {
+    height: 30px;
+    width: 10px;
+    bottom: 0;
+    right: 20%;
+}
+
+.green-3 {
+    height: 10px;
+    width: 10px;
+    bottom: 0;
+    right: 30%;
+}
+
+.green-4 {
+    height: 40px;
+    width: 10px;
+    bottom: 0;
+    right: 40%;
+}
+
+.green-5 {
+    height: 50px;
+    width: 10px;
+    bottom: 0;
+    right: 50%;
+}
+
+.green-6 {
+    height: 70px;
+    width: 10px;
+    bottom: 0;
+    right: 60%;
+}
+
+.green-7 {
+    height: 50px;
+    width: 10px;
+    bottom: 0;
+    right: 70%;
+}
+
+.green-8 {
+    height: 30px;
+    width: 10px;
+    bottom: 0;
+    right: 80%;
+}
+
+.green-9 {
+    height: 40px;
+    width: 10px;
+    bottom: 0;
+    right: 90%;
+}
+
+.green-10 {
+    height: 40px;
+    width: 10px;
+    bottom: 0;
+    right: 100%;
+}
+
+.green-11 {
+    height: 50px;
+    width: 10px;
+    bottom: 0;
+    right: 0%;
+}
+
+.green-12 {
+    height: 70px;
+    width: 10px;
+    bottom: 0;
+    right: -10%;
+}
+
+.green-13 {
+    height: 50px;
+    width: 10px;
+    bottom: 0;
+    right: -20%;
+}
+
+.green-14 {
+    height: 30px;
+    width: 10px;
+    bottom: 0;
+    right: -30%;
+}
+
+.green-15 {
+    height: 40px;
+    width: 10px;
+    bottom: 0;
+    right: -40%;
+}
+
+.green-16 {
+    height: 50px;
+    width: 10px;
+    bottom: 0;
+    right: 110%;
+}
+
+.green-17 {
+    height: 60px;
+    width: 10px;
+    bottom: 0;
+    right: 120%;
+}
+
+.green-18 {
+    height: 40px;
+    width: 10px;
+    bottom: 0;
+    right: 130%;
+}
